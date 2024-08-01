@@ -2,24 +2,27 @@ console.log("Hello World")
 
 function getComputerChoice() {
     let x = Math.random()
+    console.log(x)
+
     if (x <= 0.33) {
         choice = "rock"
         console.log("Computer: " + choice)
         return choice
     }
 
-    else if (0.67<=x>0.33) {
+    else if (0.67 < x) {
+        choice = "scissors"
+        console.log("Computer: " + choice)
+        return choice
+    }
+    
+    else  {
         choice = "paper"
         console.log("Computer: " + choice)
         return choice
     }
 
-    else {
-        choice = "scissors"
-        console.log("Computer: " + choice)
-        return choice
-    }
-
+    
 }
 
 function getHumanChoice() {
